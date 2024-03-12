@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>框架标签</title>
+  </head>
+  <body>
+    <!-- 利用iframe嵌入一个网页 -->
+    <iframe
+      src="https://www.bilibili.com"
+      width="1000"
+      height="600"
+      frameborder="0"
+    ></iframe>
+    <!-- 利用iframe关联一个表单 -->
+    <form action="https://so.toutiao.com/search" target="box">
+      <input type="text" name="keyword" value="搞笑" />
+      <button>搜索</button>
+    </form>
+    <iframe name="box" width="1000" height="600" frameborder="0"></iframe>
+  </body>
+</html>
