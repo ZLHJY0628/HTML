@@ -1,0 +1,13 @@
+.disney{
+    color: blue;
+}
+.diaobao{
+    color: yellow;
+}
+/* 交集选择器，标签名必须写在前面，比较常用的是元素选择器配合类名选择器 */
+p.diaobao{
+    color: palevioletred;
+}
+span.disney{
+    font-size: 100px;
+}
