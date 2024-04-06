@@ -12,7 +12,7 @@ span.disney{
    color: greenyellow;
 }
 /* 并集选择器
-1、一版书这些
+1、一般竖着写
 2、任何形式的选择器都可以作为并集选择器的一部分 */
 /* 类名为diaobao或者disney的样式 */
 .diaobao,
@@ -42,4 +42,29 @@ p~span{
 /* 相邻兄弟选择器，选中p标签后紧紧相邻的兄弟p元素 */
 p+span{
     color: #000;
+}
+/* 属性选择器1 */
+/* 选中具有title属性的元素 */
+[title]{
+    color: aquamarine;
+}
+/* 属性选择器2 */
+/* 选中具有某种属性，且属性值是为shanghai1的元素 */
+[title="上海1"]{
+    background-color:rosybrown;
+}
+/* 属性选择器3 */
+/* 选中具有title属性，并且以sh开头的 */
+[title^="sh"]{
+    background-color: black;
+}
+/* 属性选择器4 */
+/* 选中title属性以1结尾的元素 */
+[title$="1"]{
+    font-size: 80px;
+}
+/* 属性选择器5 */
+/* 选中title属性包含s的元素 */
+[title*="s"]{
+    color: burlywood;
 }
