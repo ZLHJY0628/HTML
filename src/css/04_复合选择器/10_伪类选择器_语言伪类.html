@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>语言伪类</title>
+    <style>
+      /* 根据指定的语言选择元素 */
+      div:lang(en) {
+        color: red;
+      }
+      :lang(zh-CN) {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div lang="en">abc</div>
+    <span>123</span>
+  </body>
+</html>

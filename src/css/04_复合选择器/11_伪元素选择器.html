@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>伪元素选择器</title>
+    <style>
+      /* 选中的是第一个文字 */
+      div::first-letter {
+        color: red;
+      }
+      /* 选中的是选中文字的时候展示的样式 */
+      div::selection {
+        background-color: yellow;
+      }
+      /* 选中的输入框内的占位符内容 */
+      input::placeholder {
+        color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+    <input type="text" placeholder="请输入你的内容" />
+  </body>
+</html>
