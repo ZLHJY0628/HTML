@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>label标签</title>
+  </head>
+  <body>
+    <form action="https://search.jd.com/search">
+      <!-- 文本输入框 -->
+      <!-- label的第一种关联写法 -->
+      <label for="zhanghu">账户：</label>
+      <input type="text" id="zhanghu" name="account" value="zhangzhang" />
+      <br />
+      <!-- 密码输入框 -->
+      <label for="mima">密码：</label>
+      <input
+        type="password"
+        id="mima"
+        name="pwd"
+        value=""
+        maxlength="6"
+      /><br />
+      <!-- 单选框 -->
+      性别：
+      <!-- label的第二种关联写法 -->
+      <label> <input type="radio" name="gender" value="male" />男 </label>
+      <input type="radio" name="gender" value="female" />女
+      <br />
+      <!-- 多选框 -->
+      爱好：
+      <input type="checkbox" name="hobby" value="vedio" />看电影
+      <input type="checkbox" name="hobby" value="shopping" />购物
+      <input type="checkbox" name="hobby" value="eating" />吃饭
+      <br />
+      <!-- 文本域 -->
+      其他：
+      <textarea name="other" cols="22" rows="3"></textarea>
+      <br />
+      籍贯：
+      <select name="place">
+        <option value="shanghai">上海</option>
+        <option value="beijing">北京</option>
+        <option value="chengdu">成都</option>
+      </select>
+      <br />
+      <!-- 隐藏域 -->
+      <input type="hidden" name="hide" value="cangqilai" />
+      <!-- 提交按钮的第一中写法，type默认是submit -->
+      <button type="submit">提交</button>
+      <!-- 重置按钮的一种写法，此种写法不写name属性 -->
+      <input type="reset" value="重置一下" />
+      <!-- 普通按钮可以通过js实现各种功能 -->
+      <button type="button">普通按钮</button>
+    </form>
+  </body>
+</html>

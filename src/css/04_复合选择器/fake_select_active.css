@@ -1,0 +1,22 @@
+/* 按照后来者居上的原则，以下顺序「LVHA」能确保每个选择器都能正常生效 */
+/* 选中没有访问过的a元素 */
+a:link{
+    color: sandybrown;
+}
+/* 选中访问过的a元素 */
+a:visited{
+    color: gray;
+}
+/* 选中鼠标悬浮状态的a元素 */
+a:hover{
+    color: hotpink;
+}
+/* 选中按下鼠标不松手的a元素 */
+a:active,
+span:active{
+    color: green;
+}
+/* 选中获取焦点的元素，只适用于表单类元素 */
+input:focus{
+background-color: teal;
+}

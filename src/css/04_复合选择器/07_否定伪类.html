@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>否定伪类</title>
+    <style>
+      /* 选中的是div的儿子p元素，但是排除类名是daoshu的元素  */
+      div > p:not(.daoshu) {
+        color: lawngreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>第一</p>
+      <p>第二</p>
+      <p>第三</p>
+      <p>第四</p>
+      <p class="daoshu">第五</p>
+      <p class="daoshu">第六</p>
+    </div>
+  </body>
+</html>

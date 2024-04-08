@@ -1,0 +1,27 @@
+/* 通配选择器可以选中html所有元素 */
+*{
+    color: orange;
+    font-size: 80px;
+}
+/* 元素选择器，给某种元素统一设定样式，无法实现差异化设置样式 */
+h2{
+    color: chocolate;
+}
+p{
+    font-size: 100px;
+}
+/* 类选择器，选中页面中所有类名为today和tomorrow的元素 */
+.today{
+    color: blueviolet;
+}
+.tomorrow{
+   color: aqua; 
+}
+/* id选择器，用#开头，制定某一个唯一的元素 */
+#tom001{
+    color: gray;
+}
+#links{
+    background-color:antiquewhite;
+    color: black;
+}
