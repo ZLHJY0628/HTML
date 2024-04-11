@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>复杂选择器的优先级</title>
+  <style>
+    /* 选择器的优先级按照选择器的权重来计算的，相同权重的后来者居上 */
+    .container span.lovely{
+      color: purple;
+    }
+    div>p>span:nth-child(1){
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p>
+      <span class="lovely">loopy比奶龙可爱</span>
+      <p>不信来比 一比</p>
+    </p>
+  </div>
+</body>
+</html>
