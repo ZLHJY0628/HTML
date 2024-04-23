@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>字体大小</title>
+  </head>
+  <style>
+    /* 字体族一般用英文，优先级从先到后 */
+    .nailong1 {
+      font-size: 40px;
+      /* 衬线字体 */
+      font-family: "楷体", "Microsoft YaHei", serif;
+    }
+    .nailong2 {
+      font-size: 30px;
+      /* 非衬线字体，一般用sans-serif结尾，表示是用当前安装的某一种非衬线字体 */
+      font-family: "STHupo", sans-serif;
+    }
+    .nailong3 {
+      font-size: 20px;
+      /* 字体倾斜 */
+      font-style: italic;
+    }
+    .nailong4 {
+      font-size: 20px;
+      font-weight: lighter;
+    }
+    .nailong5 {
+      /* 字体的复合属性，一定要有字体大小，字体族两种属性，并且要放在末尾，其他属性加在他们前面 */
+      font: bold italic 100px "楷体", sans-serif;
+    }
+  </style>
+  <body>
+    <div class="nailong1">奶龙1</div>
+    <div class="nailong2">奶龙2</div>
+    <div class="nailong3">奶龙3</div>
+    <div class="nailong4">奶龙4</div>
+    <div class="nailong5">奶龙5</div>
+  </body>
+</html>
