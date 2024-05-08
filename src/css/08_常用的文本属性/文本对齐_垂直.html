@@ -9,12 +9,33 @@
         /* 利用行高实现文本垂直方向上的底部对齐，行高等于高度*2-fontsize */
         font-size: 40px;
         background-color: skyblue;
-        height: 3 00px;
+        height: 300px;
         line-height: 560px;
+      }
+      .danyuan {
+        vertical-align: top;
       }
     </style>
   </head>
   <body>
     <div>一个div</div>
+    <table border="1">
+      <caption>
+        表格1
+      </caption>
+      <thead>
+        <tr>
+          <th>1222</th>
+          <th>2222</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr height="200">
+          <td class="danyuan">12212</td>
+          <td>12212</td>
+          <td>12212</td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>

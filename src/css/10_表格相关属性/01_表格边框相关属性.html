@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01_表格边框相关属性</title>
+    <style>
+      table {
+        /* border-width: 2px; */
+        /* border-color: greenyellow; */
+        /* dashed 虚线; dotted 点线; double 双划线 */
+        /* border-style: solid; */
+        border: 2px greenyellow solid;
+      }
+      td,
+      th {
+        border: 1px skyblue dotted;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        上海工程技术大学学生成绩表
+      </caption>
+      <thead>
+        <tr>
+          <th>学号</th>
+          <th>姓名</th>
+          <th>性别</th>
+          <th>课程名称</th>
+          <th>成绩</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>031518112</td>
+          <td>zhy</td>
+          <td>男</td>
+          <td>计算机技术</td>
+          <td>93</td>
+        </tr>
+        <tr>
+          <td>151118135</td>
+          <td>lj</td>
+          <td>女</td>
+          <td>社会保障理论</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>031518114</td>
+          <td>zzz</td>
+          <td>男</td>
+          <td>C语言程序设计</td>
+          <td>60</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
