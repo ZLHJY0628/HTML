@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>盒子模型</title>
+    <style>
+      div {
+        /* 内容区的款和高 */
+        height: 200px;
+        width: 200px;
+        /* 内边距，设置的背景颜色会填充内边距的区域 */
+        /* 内边距填写两个值的时候，指的是上下和左右 */
+        /* padding: 10px 20px; */
+        /* 内边距填写三个值的时候，指的是上、左右、下 */
+        padding: 10px 20px 30px;
+        /* 内边距填写四个值的时候，指的是上、右、下、左，顺时针 */
+        /* padding: 10px 20px 30px 40px; */
+        /* 边框,背景色会填充边框区域 */
+        border: 10px black solid;
+        /* 外边距,写多个的规律和padding相同 */
+        margin: 50px;
+        background-color: gray;
+        font-size: 20px;
+      }
+      .div {
+        border-top-color: antiquewhite;
+        border-left-color: aqua;
+        border-bottom-color: aliceblue;
+        border-bottom-color: dashed;
+      }
+    </style>
+  </head>
+  <body>
+    <div>hello</div>
+  </body>
+</html>

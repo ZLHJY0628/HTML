@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>margin的注意事项</title>
+    <style>
+      .outside {
+        width: 400px;
+        height: 400px;
+        background-color: tomato;
+        padding: 50px;
+      }
+      .inside {
+        width: 100px;
+        height: 100px;
+        margin: 50px;
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 子元素的margin是参考父元素的content计算的 -->
+    <div class="outside">
+      <div class="inside"></div>
+    </div>
+  </body>
+</html>
