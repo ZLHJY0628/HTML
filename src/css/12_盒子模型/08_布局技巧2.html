@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>布局小技巧</title>
+    <style>
+      .out {
+        height: 400px;
+        width: 400px;
+        background-color: gray;
+        /* 控制行内元素水平居中的方式，可以类比控制文字居中的方式 */
+        text-align: center;
+        line-height: 400px;
+      }
+      .inner {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="out">
+      <span class="inner">123123</span>
+    </div>
+  </body>
+</html>

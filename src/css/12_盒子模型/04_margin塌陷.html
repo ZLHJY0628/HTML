@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>margin塌陷</title>
+    <style>
+      /* 在给第一个子加top margin、最后一个子加bottom margin的时候，margin会加在父的身上，导致margin塌陷 */
+      .out {
+        /* height: 200px; */
+        width: 400px;
+        background-color: gray;
+        /* 给父加border或padding来解决 */
+        /* border: 1px solid transparent; */
+        overflow: hidden;
+      }
+      .inner1 {
+        height: 100px;
+        width: 100px;
+        background-color: orange;
+        margin-top: 50px;
+      }
+      .inner2 {
+        height: 100px;
+        width: 100px;
+        background-color: green;
+        margin-bottom: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="out">
+      <div class="inner1">inner1</div>
+      <div class="inner2">inner2</div>
+    </div>
+  </body>
+</html>
